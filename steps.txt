@@ -1,5 +1,36 @@
-Step 1: Logged into AWS using IAM user
-Step 2: Created IAM users with required permissions
-Step 3: Launched EC2 free tier instance
-Step 4: Created private S3 bucket
-Step 5: Enabled monitoring using CloudWatch
+AWS Secure Resume Hosting – Implementation Steps
+
+Step 1:
+Logged into AWS using root user only for initial setup.
+
+Step 2:
+Created a dedicated IAM user for daily cloud operations
+and avoided using the root account.
+
+Step 3:
+Logged in using IAM user credentials.
+
+Step 4:
+Created an S3 bucket in the Asia Pacific (Mumbai) region
+with Block Public Access enabled.
+
+Step 5:
+Uploaded resume PDF file to the private S3 bucket.
+
+Step 6:
+Modified Block Public Access settings to allow
+controlled public access via bucket policy.
+
+Step 7:
+Created and applied a bucket policy to allow public
+read access only for the resume object.
+
+Step 8:
+Verified live resume access using S3 Object URL.
+
+Step 9:
+Captured screenshots for proof and documentation.
+
+Step 10:
+Updated GitHub repository with README, architecture,
+steps, and screenshots.
