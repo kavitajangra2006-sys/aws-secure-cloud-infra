@@ -1,1 +1,7 @@
+Architecture Overview:
+
+- IAM users are created instead of using root user
+- EC2 instance is launched in default VPC
+- S3 bucket is private with Block Public Access enabled
+- CloudWatch is used for monitoring EC2 performance
 
