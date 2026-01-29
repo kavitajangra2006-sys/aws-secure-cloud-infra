@@ -1,0 +1,5 @@
+Step 1: Logged into AWS using IAM user
+Step 2: Created IAM users with required permissions
+Step 3: Launched EC2 free tier instance
+Step 4: Created private S3 bucket
+Step 5: Enabled monitoring using CloudWatch
