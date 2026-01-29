@@ -1,7 +1,29 @@
-Architecture Overview:
+AWS Secure Resume Hosting Architecture
 
-- IAM users are created instead of using root user
-- EC2 instance is launched in default VPC
-- S3 bucket is private with Block Public Access enabled
-- CloudWatch is used for monitoring EC2 performance
+This project follows a secure and real-world AWS architecture
+to host a resume publicly without exposing the entire storage.
 
+Architecture Components:
+
+1. IAM (Identity and Access Management)
+- Root user is not used for daily tasks
+- A dedicated IAM user is created for project operations
+- Permissions are managed securely
+
+2. Amazon S3
+- A private S3 bucket is created in Mumbai region
+- Block Public Access is enabled by default
+- Resume PDF is uploaded to the bucket
+
+3. Controlled Public Access
+- The bucket remains private
+- Public access is granted only through a bucket policy
+- Only the resume object can be accessed publicly
+
+4. Security Best Practices
+- No credentials or sensitive data exposed
+- Least-privilege concept followed
+- Public access is limited and intentional
+
+This architecture represents a production-style cloud setup
+commonly used for secure content hosting.
